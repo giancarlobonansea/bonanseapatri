@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonansea Patri</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <img id="randomImage" src="" alt="Random Image">
+    </main>
+    <script>
+        const images = [
+            '/images/BonanseaPatriLogo_1.png',
+            '/images/BonanseaPatriLogo_2.png',
+            '/images/BonanseaPatriLogo_3.png',
+            '/images/BonanseaPatriLogo_4.png',
+            '/images/BonanseaPatriLogo_5.png',
+            '/images/BonanseaPatriLogo_6.png',
+            '/images/BonanseaPatriLogo_7.png',
+            '/images/BonanseaPatriLogo_8.png',
+            '/images/BonanseaPatriLogo_9.png',
+            '/images/BonanseaPatriLogo_10.png',
+            '/images/BonanseaPatriLogo_11.png',
+            '/images/BonanseaPatriLogo_12.png',
+        ];
+
+        const randomIndex = Math.floor(Math.random() * images.length);
+        const randomImage = images[randomIndex];
+
+        document.getElementById('randomImage').src = randomImage;
+    </script>
+</body>
+</html>
