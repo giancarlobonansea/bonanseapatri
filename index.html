@@ -11,6 +11,17 @@
             margin: 0;
             padding: 0;
         }
+        body, html {
+            height: 100%;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
         img {
             max-width: 100%;
             height: auto;
@@ -23,18 +34,18 @@
     </main>
     <script>
         const images = [
-            '/images/BonanseaPatriLogo_1.png',
-            '/images/BonanseaPatriLogo_2.png',
-            '/images/BonanseaPatriLogo_3.png',
-            '/images/BonanseaPatriLogo_4.png',
-            '/images/BonanseaPatriLogo_5.png',
-            '/images/BonanseaPatriLogo_6.png',
-            '/images/BonanseaPatriLogo_7.png',
-            '/images/BonanseaPatriLogo_8.png',
-            '/images/BonanseaPatriLogo_9.png',
-            '/images/BonanseaPatriLogo_10.png',
-            '/images/BonanseaPatriLogo_11.png',
-            '/images/BonanseaPatriLogo_12.png',
+            'images/BonanseaPatriLogo_1.png',
+            'images/BonanseaPatriLogo_2.png',
+            'images/BonanseaPatriLogo_3.png',
+            'images/BonanseaPatriLogo_4.png',
+            'images/BonanseaPatriLogo_5.png',
+            'images/BonanseaPatriLogo_6.png',
+            'images/BonanseaPatriLogo_7.png',
+            'images/BonanseaPatriLogo_8.png',
+            'images/BonanseaPatriLogo_9.png',
+            'images/BonanseaPatriLogo_10.png',
+            'images/BonanseaPatriLogo_11.png',
+            'images/BonanseaPatriLogo_12.png',
         ];
 
         const randomIndex = Math.floor(Math.random() * images.length);
