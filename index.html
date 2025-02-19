@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bonansea Patri</title>
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Bonansea Patri" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,14 +20,12 @@
         body, html {
             height: 100%;
         }
-
         main {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100%;
         }
-
         img {
             max-width: 100%;
             height: auto;
@@ -30,10 +34,10 @@
 </head>
 <body>
     <main>
-        <img id="randomImage" src="" alt="Random Image">
+        <img id="randomImage" src="" alt="Bonansea Patri logo">
     </main>
     <footer style="position: absolute; bottom: 0; width: 100%; text-align: center;">
-        <a href="mailto:ask@bonanseapatri.com.br">ask@bonanseapatri.com.br</a>
+        <a href="mailto:ask@bonanseapatri.com.br">ask@bonanseapatri.com.br</a><br/>
     </footer>
     <script>
         const images = [
@@ -50,11 +54,7 @@
             'images/BonanseaPatriLogo_11.png',
             'images/BonanseaPatriLogo_12.png',
         ];
-
-        const randomIndex = Math.floor(Math.random() * images.length);
-        const randomImage = images[randomIndex];
-
-        document.getElementById('randomImage').src = randomImage;
+        document.getElementById('randomImage').src = images[Math.floor(Math.random() * images.length)];
     </script>
 </body>
 </html>
