@@ -54,7 +54,13 @@
             'images/BonanseaPatriLogo_11.png',
             'images/BonanseaPatriLogo_12.png',
         ];
-        document.getElementById('randomImage').src = images[Math.floor(Math.random() * images.length)];
+        
+        function changeImage() {
+            document.getElementById('randomImage').src = images[Math.floor(Math.random() * images.length)];
+        }
+        
+        changeImage(); // Initial call to set the first image
+        setInterval(changeImage, 10000); // Change image every 10 seconds
     </script>
 </body>
 </html>
